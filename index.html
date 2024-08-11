@@ -1,17 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.3/axios.min.js"
+    integrity="sha512-zJXKBryKlsiDaWcWQ9fuvy50SG03/Qc5SqfLXxHmk9XiUUbcD9lXYjHDBxLFOuZSU6ULXaJ69bd7blSMEgxXNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1 style="color: aquamarine;">Lorem ipsum dolor sit amet.</h1>
-    
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non repudiandae fuga voluptas sunt error, delectus alias provident voluptatem dolor!</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores eos laborum placeat sequi vitae quas officiis dolorem amet a suscipit non ab labore provident, vel recusandae architecto eveniet ullam accusantium dignissimos error similique? Ipsa autem dolore ab exercitationem ipsam doloremque recusandae consequatur nulla cum atque, asperiores dignissimos sapiente odio vitae assumenda voluptas quisquam maxime impedit excepturi provident ad? Sapiente id tenetur aperiam nobis illum ut alias sit earum libero. Repellat voluptatem quia suscipit accusamus ex perspiciatis eaque nam? Ullam, illo dolor. Vero totam blanditiis nihil tempora quisquam repellendus nesciunt hic molestias asperiores ab vitae consequatur incidunt molestiae illum voluptatibus obcaecati dolores, officiis reprehenderit ipsum error libero, voluptatum dolore fugit sed? Suscipit beatae ad laborum accusamus in tempora repudiandae nulla, error dicta est! Voluptatem dolor beatae dicta architecto officia fugit, vero omnis quia impedit in! Laborum veritatis accusamus culpa quam, labore vero? Ducimus ea accusamus hic obcaecati nemo aperiam optio recusandae eius libero voluptas, suscipit rem placeat culpa dicta quis repellat. Fugiat nam iure veritatis impedit, facilis sit maxime odit ab quis nostrum sunt suscipit iste sed quasi quae tempore, pariatur, eos nulla dolores. Dicta neque eos ex optio assumenda libero, dolores eaque debitis sit commodi fuga dolor eius vitae odit officiis accusamus accusantium consequatur repellendus perspiciatis. Eius nemo odit quidem fugit asperiores, aliquid ea suscipit, dicta id voluptatem dolor adipisci pariatur officiis! Nostrum minima esse hic exercitationem aperiam consectetur nam ea itaque sunt minus nemo beatae harum nobis quam illum aliquid molestiae asperiores delectus voluptatibus velit temporibus sint, suscipit saepe debitis. Aut autem beatae deleniti nulla modi illum voluptatibus dolorem quaerat facere facilis soluta explicabo, aspernatur et aperiam eligendi vitae quis, veniam necessitatibus pariatur placeat? Neque similique voluptates quas. Corporis tempore molestias rerum saepe cum dolore commodi magnam eum enim cumque consequatur quis dolorum, laudantium, debitis, quibusdam dolorem culpa?</p>
-     <h1 style="color: red;">Lorem ipsum dolor sit amet.</h1>
-     <h3>feling happy now</h3>
+
+
+  <!-- <div id="container">
+    <h1>my list</h1>
+    <ul id="myList">
+      <li id="first" class="item">Lorem, ipsum dolor.</li>
+      <li class="item">Hic, quia facilis!</li>
+      <li class="item">Quisquam, possimus! Omnis.</li>
+      <li class="item">Atque, accusamus assumenda?</li>
+      <li class="item">Consequuntur, doloribus veritatis.</li>
+    </ul>
+    <button id="add_new">Add New Item</button>
+  </div> -->
+
+
+
+  <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+  <div class="box">
+    <ul>
+      <li>good</li>
+      <li>good</li>
+      <li>good</li>
+    </ul>
+  </div> -->
+
+
+
+
+  <!-- <div class="calculator">
+    <div class="calculator-display">
+      <input type="text" id="display" disabled>
+    </div>
+    <div class="calculator-buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendToDisplay('/')">/</button>
+      <button class="btn" onclick="appendToDisplay('*')">*</button>
+      <button class="btn" onclick="backspace()">←</button>
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn" onclick="appendToDisplay('-')">-</button>
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn" onclick="appendToDisplay('+')">+</button>
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn" onclick="calculate()">=</button>
+      <button class="btn zero" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn" onclick="appendToDisplay('00')">00</button>
+    </div>
+  </div> -->
+
+  <!-- <style>
+    button {
+      padding: 20px 40px;
+      margin: 20px;
+      /* text-transform: uppercase; */
+      font-size: 17px;
+      background-color: aquamarine;
+      border: none;
+      box-shadow: 0 0 4px #02040e11;
+      border: 3px solid transparent;
+    }
+
+    .btn {
+      border: 3px solid greenyellow;
+    }
+  </style> -->
+
+
+  <!-- <p>Lorem ipsum dolor sit amet consectetur.</p>
+  <button class="a">a</button>
+  <button class="b">b</button>
+  <button class="c">c</button> -->
+
+  <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+  <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+
+
+
+  <!-- <label for="name">Name: <input type="text" class="name_input" id="name_input" name="name"></label> -->
+  <!-- <div class="">
+    <h2>programing langues</h2>
+    <label for="program">
+      <input type="checkbox" name="program" id="" value="c">C
+    </label>
+    <label for="java">
+      <input type="checkbox" name="program" id="" value="java">java
+    </label>
+  </div> -->
+
+  <!-- <label for="depertment">Depertment: </label>
+  <select name="depertment" id="depertment">
+    <option value="cse">CSE</option>
+    <option value="eee">EEE</option>
+    <option value="stat">STAT</option>
+  </select> -->
+
+
+  <!-- <form action="">
+    <div class="">
+      <label for="name">Name:
+        <input type="text" id="name" name="name" required autofocus>
+      </label>
+    </div>
+    <div class="">
+      <label for="email">Email:
+        <input type="email" id="email" name="email" required size="30">
+      </label>
+    </div>
+    <div class="">
+      <label for="password">Passwoed:
+        <input type="password" id="password" name="password" required minlength="4" maxlength="8">
+      </label>
+    </div>
+    <div class="">
+      <input type="submit" value="sign up" id="">
+    </div>
+  </form> -->
+
+
+  <!-- <video width="400" controls loop>
+    <source src="video1.mp4" type="video/mp4">
+  </video> -->
+
+  <!-- <details>
+    <summary>mottuqe</summary>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </details> -->
+
+
+  <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+  <!-- 
+  <input type="text"> -->
+
+
+  <!-- <input type="text">
+  <p></p> -->
+
+
+
+  <!-- <style>
+    .div1 {
+      height: 10rem;
+      width: 20rem;
+      background-color: tomato;
+    }
+  </style>
+  <div class="div1"></div>
+  <p id="drag1" draggable="true">hi i am mottuqe</p> -->
+
+  <!-- <h1>BOM</h1>
+  <div class="location_div">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <button id="vsit_btn">viit my webpage</button> -->
+
+
+
+
+  <!-- <button class="save_btn">Save</button>
+  <p class="message"></p> -->
+
+  <!-- <p>Enter a number between 5 to 10:</p>
+  <input type="text" id="numTextFild">
+  <button id="checkId">Check</button> -->
+
+
+  <!-- <canvas id="myCanvas" width="400px" height="300px"></canvas> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    // document.addEventListener("keypress", function (event) {
+    //   var text = event.key;
+    //   document.querySelector("p").innerHTML = "You Have Clicked: " + text;
+    // })
+
+    // var count = 0;
+    // document.querySelector("textarea").addEventListener("keypress", function (event) {
+    //   count++;
+    //   var text = event.key;
+    //   document.querySelector("p").innerHTML = "You Have Press: " + count;
+    // })
+
+
+
+
+
+
+
+    // var lan = document.querySelectorAll("button").length;
+    // for (var i = 0; i < lan; i++) {
+    //   document.querySelectorAll("button")[i].addEventListener("click", function () {
+    //     var text = this.innerHTML;
+    //     document.querySelector("p").innerHTML = text + " button clicked";
+    //     addAnim(text);
+    //     timeOut(text);
+    //   });
+    // }
+
+
+    // document.addEventListener("keypress", function (event) {
+    //   var text = event.key;
+    //   addAnim(text);
+    //   timeOut(text);
+    // })
+
+    // function timeOut(text) {
+    //   setTimeout(function () {
+    //     document.querySelector("." + text).classList.remove("btn");
+    //   }, 1000);
+    // }
+
+
+
+    // function addAnim(text) {
+    //   switch (text) {
+    //     case "a":
+    //       document.querySelector(".a").classList.add("btn");
+    //       break;
+    //     case "b":
+    //       document.querySelector(".b").classList.add("btn")
+    //       break;
+    //     case "c":
+    //       document.querySelector(".c").classList.add("btn")
+    //       break;
+
+
+    //   }
+    // }
+
+
+
+
+
+    // document.getElementById('first').addEventListener('click',function(){
+    //     console.log('first item');
+
+    // })
+    // document.getElementById('myList').addEventListener('click',function(){
+    //     console.log('ul clicked');
+    //     event.stopImmediatePropagation();
+    // })
+    // document.getElementById('container').addEventListener('click',function(){
+    //     console.log('container clicked');
+    // })
+
+    // var items = document.getElementsByClassName('item');
+    // for (let i = 0; i < items.length; i++) {
+    //     var item = items[i];
+    //     item.addEventListener('click',function(event){
+    //         event.target.parentNode.removeChild(event.target);
+    //     })
+    // }
+    // document.getElementById('add_new').addEventListener('click', function (event) {
+    //   var itemParent = document.getElementById('myList');
+    //   var newItem = document.createElement('li');
+    //   newItem.innerText = 'Brand New Item';
+    //   itemParent.appendChild(newItem);
+    // })
+    // document.getElementById('myList').addEventListener('click', function () {
+    //   // console.log(this,event.target);
+    //   event.target.parentNode.removeChild(event.target);
+    // })
+
+  </script>
+
+  <script src="abc.js" type="module"></script>
 </body>
+
 </html>
